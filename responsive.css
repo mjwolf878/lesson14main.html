@@ -1,43 +1,73 @@
-@media screen and (max-width: 400px){
-body{
-  display:flex;
-  flex-wrap:wrap;
-}
-  .hero {
-    order: 0;
-    background-image: url("./images/dog.jpg");
-    background-size: cover;
-    height: auto;
-  }
-  .news top-news a{
-    order:1;
-    padding: 1.5em;
-  }
-  .scores {
-    order:2;
 
-  }
-  .weather{
-    order:3;
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 450px){
+.nav{
+  translate: translate(-300px,0);
+  transition: transform 0.3s ease;
+}
+.hero{
+  width: 100%;
+  order:0
+}
+.weather{
+  order:3;
+  width: 100%;
+}
+.top-news{
+  width:100%;
+  order:1;
+}
+.sports{
+  width:100%;
+  order:2;
   }
   .recent-news{
     order:4;
   }
-  .footer{
-    order: 5;
+
+
+
+@media screen and (min-width: 600px){
+
+  .hero{
+    width: 60%;
+    order:0
   }
+  .weather{
+    width:40%;
+    order:1;
+  }
+.top-news{
+  width:100%;
+  order:2;
 }
 
 
-media screen and (min-width: 550px){
+@media screen and (min-width: 800px){
 
-}
-
-media screen and (min-width: 950px){
-
-body {
+.content {
   width: 900px;
   margin-right: auto;
   margin-left: auto;
+}
+.hero{
+  width: 50%;
+  order:0;
+}
+.top-news{
+  width: 50%;
+  order: 1;
+}
+.scores{
+  width: 50%;
+  order:2;
+}
+.weather{
+  width:50%;
+  order:3;
 }
 }
